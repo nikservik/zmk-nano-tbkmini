@@ -1,7 +1,7 @@
 if SHIELD_TBKMINI_LEFT || SHIELD_TBKMINI_ADAPTERV2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "tbkmini Left"
+    default "tbkmini"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
