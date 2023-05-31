@@ -112,7 +112,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans            &trans        &trans        &trans          &trans  &trans    &out OUT_USB        &trans        &trans           &trans        &trans  &trans
+&trans            &trans        &trans        &trans          &trans  &trans    &out OUT_USB    &bt BT_CLR        &trans           &trans        &trans  &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans          &trans    &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP    &kp C_NEXT  &trans
 &trans            &trans        &trans        &trans          &trans  &trans    &out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &trans
                                               &trans          &trans  &trans      &kp C_STOP   &kp C_PAUSE    &kp C_MUTE
@@ -127,19 +127,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none    &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp AMPERSAND          &kp PIPE    &trans           &trans         &trans         &trans             &trans  &trans
-&none  &kp BACKSLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp EXCLAMATION      &kp QUESTION    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
-&none       &kp HASH        &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN    &trans           &trans         &trans         &trans             &trans  &trans
-                                                        &kp LS(P)       &kp DOLLAR             &kp P    &trans           &trans         &trans
+&none  &kp GRAVE    &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS         &kp PIPE    &trans           &trans         &trans         &trans             &trans  &trans
+&none   &kp HASH   &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp AMPERSAND    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
+&none  &kp SLASH  &kp BACKSLASH         &kp LESS_THAN       &kp GREATER_THAN  &kp EXCLAMATION    &trans           &trans         &trans         &trans             &trans  &trans
+                                            &kp LS(P)             &kp DOLLAR            &kp P    &trans           &trans         &trans
             >;
         };
 
         Num {
             bindings = <
-&trans        &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS    &trans           &trans         &trans         &trans             &trans  &trans
+&trans     &kp CARET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL    &trans           &trans         &trans         &trans             &trans  &trans
 &trans  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp PLUS    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
-&trans     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL    &trans           &trans         &trans         &trans             &trans  &trans
-                                         &kp DOT  &kp NUMBER_0    &kp RET    &trans           &trans         &trans
+&trans     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &trans           &trans         &trans         &trans             &trans  &trans
+                                         &kp DOT     &kp SPACE     &kp N0    &trans           &trans         &trans
             >;
         };
 
