@@ -1,4 +1,4 @@
-if SHIELD_CNAN_LEFT
+if SHIELD_CNANO_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "cnano"
