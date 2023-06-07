@@ -1,0 +1,23 @@
+if SHIELD_CNAN_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "cnano"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CNANO_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "cnano Right"
+
+endif
+
+if SHIELD_CNANO_LEFT || SHIELD_CNANO_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

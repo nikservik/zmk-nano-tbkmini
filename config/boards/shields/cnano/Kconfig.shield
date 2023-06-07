@@ -1,0 +1,8 @@
+# Copyright (c) 2022 Casey Webster, Lau Kar Rui
+# SPDX-License-Identifier: MIT
+
+config SHIELD_CNANO_LEFT
+    def_bool $(shields_list_contains,cnano_left)
+ 
+config SHIELD_CNANO_RIGHT
+    def_bool $(shields_list_contains,cnano_right)
