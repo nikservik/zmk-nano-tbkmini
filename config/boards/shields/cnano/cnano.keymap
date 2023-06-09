@@ -18,6 +18,7 @@
 &kp Z     &kp X    &kp C     &kp V     &kp B                     &kp N     &kp M    &kp COMMA &bt BT_CLR &bt BT_SEL 0 
                    &kp ESC   &kp SPACE &kp TAB                   &kp ENTER &kp BKSP
 			>;
+			trackball-bindings = <&tmv_coarse>;
 		};
 	};
 };
