@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
@@ -10,12 +9,12 @@
 
 / {
     chosen {
-      zmk,battery = &vbatt;
+        zmk,battery = &vbatt;
     };
 
     vbatt: vbatt {
-      compatible = "zmk,battery-nrf-vddh";
-      label = "VBATT";
+        compatible = "zmk,battery-nrf-vddh";
+        label = "VBATT";
     };
 
     behaviors {
@@ -31,7 +30,7 @@
             flavor = "tap-preferred";
             quick-tap-ms = <125>;
             global-quick-tap;
-            hold-trigger-key-positions = <6 7 8 10 9 11 23 22 21 20 19 18 30 31 32 33 34 35 39 40 41>;
+            hold-trigger-key-positions = <6 7 8 9 19 18 33 34 35 39 40 41 5 15 25 26 16 17 27 28 29>;
         };
         rhht: rhht {
             compatible = "zmk,behavior-hold-tap";
@@ -45,7 +44,7 @@
             quick-tap-ms = <125>;
             flavor = "tap-preferred";
             global-quick-tap;
-            hold-trigger-key-positions = <5 4 3 2 1 13 25 26 27 28 29 17 16 15 14 0 12 24 38 37 36>;
+            hold-trigger-key-positions = <4 3 2 1 13 14 0 12 24 38 37 36 10 11 20 21 22 23 30 31 32>;
         };
     };
 
@@ -54,27 +53,27 @@
 
         lang_switch {
             bindings = <&kp LC(SPACE)>;
-            key-positions = <25 13>;
+            key-positions = <10 20>;
         };
 
         kp_bslh {
             bindings = <&kp BACKSLASH>;
-            key-positions = <1 13>;
+            key-positions = <0 10>;
         };
 
         kp_lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <10 22>;
+            key-positions = <9 19>;
         };
 
         kp_apos {
             bindings = <&kp APOS>;
-            key-positions = <22 34>;
+            key-positions = <29 19>;
         };
 
         kp_rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <21 9>;
+            key-positions = <8 18>;
         };
     };
 
@@ -131,15 +130,15 @@
    &kp CARET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL    &trans           &trans         &trans         &trans             &trans
 &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp PLUS    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL
    &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &trans           &trans         &trans         &trans             &trans
-                                 &kp DOT     &kp SPACE     &kp N0    &trans           &trans         &trans
+                                 &kp DOT     &kp SPACE     &kp N0    &trans           &trans
             >;
         };
 
         Nav {
             bindings = <
-   &trans        &trans        &trans          &trans  &trans      &kp PAGE_UP       &kp HOME      &kp UP    &kp END  &kp RG(RS(Z))
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp PAGE_DOWN       &kp LEFT    &kp DOWN  &kp RIGHT      &kp RG(Z)
-   &trans        &trans        &trans          &trans  &trans           &trans      &kp RG(B)   &kp RG(C)  &kp LG(X)       &kp CAPS
+   &trans        &trans        &trans          &trans  &trans      &kp PAGE_UP       &kp HOME     &kp UP    &kp END  &kp RG(RS(Z))
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp PAGE_DOWN       &kp LEFT   &kp DOWN  &kp RIGHT      &kp RG(Z)
+   &trans        &trans        &trans          &trans  &trans           &trans      &kp RG(B)  &kp RG(C)  &kp LG(X)       &kp CAPS
                                &trans          &trans  &trans        &kp ENTER  &kp BACKSPACE
             >;
         };
