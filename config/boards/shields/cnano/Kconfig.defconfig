@@ -1,4 +1,4 @@
-if SHIELD_CNANO_LEFT
+if SHIELD_CNANO_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "cnano"
@@ -8,12 +8,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CNANO_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "cnano Right"
-
-endif
 
 if SHIELD_CNANO_LEFT || SHIELD_CNANO_RIGHT
 
@@ -21,3 +15,15 @@ config ZMK_SPLIT
     default y
 
 endif
+
+config MOUSE_LAYER_INDEX
+    int "Index of mouse layer"
+    default 6
+
+config SCROLL_LAYER_INDEX
+    int "Index of scroll layer"
+    default 5
+
+config MOUSE_LAYER_ACTIVE_MS
+    int "Amount of milliseconds the mouse layer will be active after using the trackball"
+    default 400
