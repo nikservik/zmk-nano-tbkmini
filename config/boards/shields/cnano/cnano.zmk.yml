@@ -8,5 +8,5 @@ features:
   - keys
   - pointer
 siblings:
-  - tbkmini_left
-  - tbkmini_right
+  - cnano_left
+  - cnano_right
