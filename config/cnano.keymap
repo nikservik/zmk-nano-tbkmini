@@ -93,7 +93,7 @@
         m_this: m_this {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DLLR &kp T &kp H &kp I &kp S &kp MINUS &kp GT>;
+            bindings = <&kp DLLR &kp F &kp M &kp L &kp D &kp MINUS &kp GT>;
             label = "M_THIS";
         };
     };
